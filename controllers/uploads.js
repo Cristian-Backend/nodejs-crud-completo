@@ -125,7 +125,7 @@ const cargarArchivos = async(req,res = response) => {
         const nombreArr = modelo.img.split('/') // separa por el /  y es como un array.
         const nombre = nombreArr [nombreArr.length -1] // accedemos al penultimo elemento, osea r83ekyijgqshrwe0erv8
         const [public_id] = nombre.split('.')
-
+//sds
 
         console.log(public_id) // id de cloudinary que esta en su pagina web.
 
