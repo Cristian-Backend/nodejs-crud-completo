@@ -34,7 +34,10 @@ app.use('/api/buscar', routerBuscar)
 app.use('/api/uploads', routerUploads)
 
 
-app.listen(process.env.PORT,()=> {
+const port = process.env.PORT || 8080
+
+
+app.listen(port,()=> {
 
     dbConection()    
     console.log("SERVIDOR UP")
